@@ -1,0 +1,1010 @@
+[
+  {
+    "id": "lead-001",
+    "name": "John Smith",
+    "company": "TechCorp Inc",
+    "email": "john.smith@techcorp.com",
+    "source": "Website",
+    "score": 95,
+    "status": "new"
+  },
+  {
+    "id": "lead-002",
+    "name": "Sarah Johnson",
+    "company": "Innovation Labs",
+    "email": "sarah.j@innovationlabs.com",
+    "source": "LinkedIn",
+    "score": 88,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-003",
+    "name": "Michael Chen",
+    "company": "DataFlow Systems",
+    "email": "m.chen@dataflow.com",
+    "source": "Referral",
+    "score": 92,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-004",
+    "name": "Emma Wilson",
+    "company": "CloudTech Solutions",
+    "email": "emma.wilson@cloudtech.com",
+    "source": "Cold Call",
+    "score": 76,
+    "status": "new"
+  },
+  {
+    "id": "lead-005",
+    "name": "David Rodriguez",
+    "company": "StartupXYZ",
+    "email": "david@startupxyz.com",
+    "source": "Trade Show",
+    "score": 84,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-006",
+    "name": "Lisa Thompson",
+    "company": "Enterprise Corp",
+    "email": "lisa.thompson@enterprise.com",
+    "source": "Website",
+    "score": 91,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-007",
+    "name": "Robert Kim",
+    "company": "Tech Dynamics",
+    "email": "r.kim@techdynamics.com",
+    "source": "LinkedIn",
+    "score": 79,
+    "status": "new"
+  },
+  {
+    "id": "lead-008",
+    "name": "Jennifer Lee",
+    "company": "Future Systems",
+    "email": "jennifer.lee@futuresystems.com",
+    "source": "Referral",
+    "score": 87,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-009",
+    "name": "Mark Davis",
+    "company": "Digital Innovations",
+    "email": "mark.davis@digitalinnovations.com",
+    "source": "Cold Call",
+    "score": 73,
+    "status": "unqualified"
+  },
+  {
+    "id": "lead-010",
+    "name": "Amanda Brown",
+    "company": "Smart Solutions",
+    "email": "amanda.brown@smartsolutions.com",
+    "source": "Website",
+    "score": 89,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-011",
+    "name": "James Wilson",
+    "company": "Tech Ventures",
+    "email": "james.wilson@techventures.com",
+    "source": "Trade Show",
+    "score": 82,
+    "status": "new"
+  },
+  {
+    "id": "lead-012",
+    "name": "Rachel Green",
+    "company": "NextGen Corp",
+    "email": "rachel.green@nextgen.com",
+    "source": "LinkedIn",
+    "score": 85,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-013",
+    "name": "Kevin Martinez",
+    "company": "Quantum Systems",
+    "email": "kevin.martinez@quantum.com",
+    "source": "Website",
+    "score": 91,
+    "status": "new"
+  },
+  {
+    "id": "lead-014",
+    "name": "Nicole Anderson",
+    "company": "Cyber Solutions",
+    "email": "nicole.anderson@cybersolutions.com",
+    "source": "LinkedIn",
+    "score": 78,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-015",
+    "name": "Christopher Taylor",
+    "company": "AI Innovations",
+    "email": "chris.taylor@aiinnovations.com",
+    "source": "Referral",
+    "score": 86,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-016",
+    "name": "Stephanie White",
+    "company": "BlockChain Corp",
+    "email": "stephanie.white@blockchain.com",
+    "source": "Cold Call",
+    "score": 74,
+    "status": "new"
+  },
+  {
+    "id": "lead-017",
+    "name": "Daniel Garcia",
+    "company": "IoT Dynamics",
+    "email": "daniel.garcia@iotdynamics.com",
+    "source": "Trade Show",
+    "score": 88,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-018",
+    "name": "Michelle Clark",
+    "company": "Data Analytics Pro",
+    "email": "michelle.clark@dataanalytics.com",
+    "source": "Website",
+    "score": 93,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-019",
+    "name": "Ryan Lewis",
+    "company": "Cloud Nine Tech",
+    "email": "ryan.lewis@cloudnine.com",
+    "source": "LinkedIn",
+    "score": 81,
+    "status": "new"
+  },
+  {
+    "id": "lead-020",
+    "name": "Ashley Walker",
+    "company": "Mobile First",
+    "email": "ashley.walker@mobilefirst.com",
+    "source": "Referral",
+    "score": 89,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-021",
+    "name": "Brandon Hall",
+    "company": "Security Systems",
+    "email": "brandon.hall@securitysys.com",
+    "source": "Cold Call",
+    "score": 72,
+    "status": "unqualified"
+  },
+  {
+    "id": "lead-022",
+    "name": "Megan Young",
+    "company": "Fintech Solutions",
+    "email": "megan.young@fintech.com",
+    "source": "Website",
+    "score": 87,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-023",
+    "name": "Tyler King",
+    "company": "Robotics Inc",
+    "email": "tyler.king@robotics.com",
+    "source": "Trade Show",
+    "score": 84,
+    "status": "new"
+  },
+  {
+    "id": "lead-024",
+    "name": "Samantha Wright",
+    "company": "VR Technologies",
+    "email": "samantha.wright@vrtech.com",
+    "source": "LinkedIn",
+    "score": 90,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-025",
+    "name": "Jonathan Lopez",
+    "company": "Machine Learning Co",
+    "email": "jonathan.lopez@mlco.com",
+    "source": "Website",
+    "score": 85,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-026",
+    "name": "Brittany Hill",
+    "company": "DevOps Central",
+    "email": "brittany.hill@devopscentral.com",
+    "source": "Referral",
+    "score": 79,
+    "status": "new"
+  },
+  {
+    "id": "lead-027",
+    "name": "Austin Scott",
+    "company": "API Gateway",
+    "email": "austin.scott@apigateway.com",
+    "source": "Cold Call",
+    "score": 76,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-028",
+    "name": "Kimberly Green",
+    "company": "Microservices Ltd",
+    "email": "kimberly.green@microservices.com",
+    "source": "Trade Show",
+    "score": 88,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-029",
+    "name": "Nathan Adams",
+    "company": "Container Tech",
+    "email": "nathan.adams@containertech.com",
+    "source": "Website",
+    "score": 82,
+    "status": "new"
+  },
+  {
+    "id": "lead-030",
+    "name": "Courtney Baker",
+    "company": "Serverless Systems",
+    "email": "courtney.baker@serverless.com",
+    "source": "LinkedIn",
+    "score": 91,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-031",
+    "name": "Gregory Gonzalez",
+    "company": "Edge Computing",
+    "email": "gregory.gonzalez@edgecomputing.com",
+    "source": "Referral",
+    "score": 77,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-032",
+    "name": "Vanessa Nelson",
+    "company": "5G Networks",
+    "email": "vanessa.nelson@5gnetworks.com",
+    "source": "Cold Call",
+    "score": 83,
+    "status": "new"
+  },
+  {
+    "id": "lead-033",
+    "name": "Jeremy Carter",
+    "company": "Quantum Computing",
+    "email": "jeremy.carter@quantumcomp.com",
+    "source": "Website",
+    "score": 94,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-034",
+    "name": "Crystal Mitchell",
+    "company": "Neural Networks",
+    "email": "crystal.mitchell@neuralnet.com",
+    "source": "Trade Show",
+    "score": 86,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-035",
+    "name": "Marcus Perez",
+    "company": "Deep Learning Labs",
+    "email": "marcus.perez@deeplearning.com",
+    "source": "LinkedIn",
+    "score": 89,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-036",
+    "name": "Tiffany Roberts",
+    "company": "Computer Vision Co",
+    "email": "tiffany.roberts@computervision.com",
+    "source": "Referral",
+    "score": 80,
+    "status": "new"
+  },
+  {
+    "id": "lead-037",
+    "name": "Sean Turner",
+    "company": "Natural Language Processing",
+    "email": "sean.turner@nlp.com",
+    "source": "Cold Call",
+    "score": 75,
+    "status": "unqualified"
+  },
+  {
+    "id": "lead-038",
+    "name": "Heather Phillips",
+    "company": "Augmented Reality",
+    "email": "heather.phillips@ar.com",
+    "source": "Website",
+    "score": 87,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-039",
+    "name": "Corey Campbell",
+    "company": "Mixed Reality Systems",
+    "email": "corey.campbell@mixedreality.com",
+    "source": "Trade Show",
+    "score": 84,
+    "status": "new"
+  },
+  {
+    "id": "lead-040",
+    "name": "Monica Parker",
+    "company": "Holographic Tech",
+    "email": "monica.parker@holographic.com",
+    "source": "LinkedIn",
+    "score": 92,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-041",
+    "name": "Derek Evans",
+    "company": "Biometric Solutions",
+    "email": "derek.evans@biometric.com",
+    "source": "Referral",
+    "score": 78,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-042",
+    "name": "Alicia Edwards",
+    "company": "Facial Recognition Corp",
+    "email": "alicia.edwards@facialrecog.com",
+    "source": "Cold Call",
+    "score": 81,
+    "status": "new"
+  },
+  {
+    "id": "lead-043",
+    "name": "Trevor Collins",
+    "company": "Voice Recognition Tech",
+    "email": "trevor.collins@voicetech.com",
+    "source": "Website",
+    "score": 85,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-044",
+    "name": "Jasmine Stewart",
+    "company": "Gesture Control Systems",
+    "email": "jasmine.stewart@gesturecontrol.com",
+    "source": "Trade Show",
+    "score": 88,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-045",
+    "name": "Dustin Sanchez",
+    "company": "Smart Home Tech",
+    "email": "dustin.sanchez@smarthome.com",
+    "source": "LinkedIn",
+    "score": 83,
+    "status": "new"
+  },
+  {
+    "id": "lead-046",
+    "name": "Erica Morris",
+    "company": "Wearable Devices",
+    "email": "erica.morris@wearable.com",
+    "source": "Referral",
+    "score": 90,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-047",
+    "name": "Carl Rogers",
+    "company": "Health Tech Solutions",
+    "email": "carl.rogers@healthtech.com",
+    "source": "Cold Call",
+    "score": 76,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-048",
+    "name": "Denise Reed",
+    "company": "Medical AI",
+    "email": "denise.reed@medicalai.com",
+    "source": "Website",
+    "score": 91,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-049",
+    "name": "Victor Cook",
+    "company": "Telemedicine Corp",
+    "email": "victor.cook@telemedicine.com",
+    "source": "Trade Show",
+    "score": 79,
+    "status": "new"
+  },
+  {
+    "id": "lead-050",
+    "name": "Melanie Morgan",
+    "company": "Digital Health",
+    "email": "melanie.morgan@digitalhealth.com",
+    "source": "LinkedIn",
+    "score": 86,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-051",
+    "name": "Andre Bell",
+    "company": "Fitness Tech",
+    "email": "andre.bell@fitnesstech.com",
+    "source": "Referral",
+    "score": 82,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-052",
+    "name": "Cheryl Murphy",
+    "company": "Nutrition Analytics",
+    "email": "cheryl.murphy@nutrition.com",
+    "source": "Cold Call",
+    "score": 74,
+    "status": "unqualified"
+  },
+  {
+    "id": "lead-053",
+    "name": "Lance Bailey",
+    "company": "Sports Analytics",
+    "email": "lance.bailey@sportsanalytics.com",
+    "source": "Website",
+    "score": 87,
+    "status": "new"
+  },
+  {
+    "id": "lead-054",
+    "name": "Jenna Rivera",
+    "company": "Performance Tracking",
+    "email": "jenna.rivera@performance.com",
+    "source": "Trade Show",
+    "score": 89,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-055",
+    "name": "Phillip Cooper",
+    "company": "Recovery Systems",
+    "email": "phillip.cooper@recovery.com",
+    "source": "LinkedIn",
+    "score": 80,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-056",
+    "name": "Candice Richardson",
+    "company": "Mental Health Tech",
+    "email": "candice.richardson@mentalhealth.com",
+    "source": "Referral",
+    "score": 93,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-057",
+    "name": "Rodney Cox",
+    "company": "Therapy Apps",
+    "email": "rodney.cox@therapyapps.com",
+    "source": "Cold Call",
+    "score": 77,
+    "status": "new"
+  },
+  {
+    "id": "lead-058",
+    "name": "Kristen Ward",
+    "company": "Wellness Platforms",
+    "email": "kristen.ward@wellness.com",
+    "source": "Website",
+    "score": 85,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-059",
+    "name": "Clarence Torres",
+    "company": "Meditation Tech",
+    "email": "clarence.torres@meditation.com",
+    "source": "Trade Show",
+    "score": 81,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-060",
+    "name": "Natalie Peterson",
+    "company": "Sleep Technology",
+    "email": "natalie.peterson@sleeptech.com",
+    "source": "LinkedIn",
+    "score": 88,
+    "status": "new"
+  },
+  {
+    "id": "lead-061",
+    "name": "Gerald Gray",
+    "company": "Energy Storage",
+    "email": "gerald.gray@energystorage.com",
+    "source": "Referral",
+    "score": 84,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-062",
+    "name": "Jacqueline James",
+    "company": "Solar Solutions",
+    "email": "jacqueline.james@solar.com",
+    "source": "Cold Call",
+    "score": 79,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-063",
+    "name": "Eugene Watson",
+    "company": "Wind Power Tech",
+    "email": "eugene.watson@windpower.com",
+    "source": "Website",
+    "score": 92,
+    "status": "new"
+  },
+  {
+    "id": "lead-064",
+    "name": "Theresa Brooks",
+    "company": "Hydroelectric Systems",
+    "email": "theresa.brooks@hydro.com",
+    "source": "Trade Show",
+    "score": 86,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-065",
+    "name": "Harold Kelly",
+    "company": "Geothermal Energy",
+    "email": "harold.kelly@geothermal.com",
+    "source": "LinkedIn",
+    "score": 83,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-066",
+    "name": "Lorraine Sanders",
+    "company": "Nuclear Tech",
+    "email": "lorraine.sanders@nucleartech.com",
+    "source": "Referral",
+    "score": 90,
+    "status": "new"
+  },
+  {
+    "id": "lead-067",
+    "name": "Wayne Price",
+    "company": "Smart Grid Solutions",
+    "email": "wayne.price@smartgrid.com",
+    "source": "Cold Call",
+    "score": 75,
+    "status": "unqualified"
+  },
+  {
+    "id": "lead-068",
+    "name": "Darlene Bennett",
+    "company": "Power Management",
+    "email": "darlene.bennett@powermgmt.com",
+    "source": "Website",
+    "score": 87,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-069",
+    "name": "Marvin Wood",
+    "company": "Electric Vehicles",
+    "email": "marvin.wood@ev.com",
+    "source": "Trade Show",
+    "score": 89,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-070",
+    "name": "Gina Barnes",
+    "company": "Battery Technology",
+    "email": "gina.barnes@battery.com",
+    "source": "LinkedIn",
+    "score": 81,
+    "status": "new"
+  },
+  {
+    "id": "lead-071",
+    "name": "Keith Ross",
+    "company": "Charging Infrastructure",
+    "email": "keith.ross@charging.com",
+    "source": "Referral",
+    "score": 85,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-072",
+    "name": "Pauline Henderson",
+    "company": "Autonomous Vehicles",
+    "email": "pauline.henderson@autonomous.com",
+    "source": "Cold Call",
+    "score": 78,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-073",
+    "name": "Lester Coleman",
+    "company": "Transportation Tech",
+    "email": "lester.coleman@transport.com",
+    "source": "Website",
+    "score": 91,
+    "status": "new"
+  },
+  {
+    "id": "lead-074",
+    "name": "Belinda Jenkins",
+    "company": "Logistics Solutions",
+    "email": "belinda.jenkins@logistics.com",
+    "source": "Trade Show",
+    "score": 84,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-075",
+    "name": "Ruben Perry",
+    "company": "Supply Chain Tech",
+    "email": "ruben.perry@supplychain.com",
+    "source": "LinkedIn",
+    "score": 88,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-076",
+    "name": "Gladys Powell",
+    "company": "Warehouse Automation",
+    "email": "gladys.powell@warehouse.com",
+    "source": "Referral",
+    "score": 82,
+    "status": "new"
+  },
+  {
+    "id": "lead-077",
+    "name": "Darrell Long",
+    "company": "Inventory Management",
+    "email": "darrell.long@inventory.com",
+    "source": "Cold Call",
+    "score": 76,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-078",
+    "name": "Dolores Patterson",
+    "company": "Fleet Management",
+    "email": "dolores.patterson@fleet.com",
+    "source": "Website",
+    "score": 90,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-079",
+    "name": "Clifford Hughes",
+    "company": "Route Optimization",
+    "email": "clifford.hughes@route.com",
+    "source": "Trade Show",
+    "score": 83,
+    "status": "new"
+  },
+  {
+    "id": "lead-080",
+    "name": "Maxine Flores",
+    "company": "Delivery Drones",
+    "email": "maxine.flores@drones.com",
+    "source": "LinkedIn",
+    "score": 87,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-081",
+    "name": "Roderick Washington",
+    "company": "Aerospace Systems",
+    "email": "roderick.washington@aerospace.com",
+    "source": "Referral",
+    "score": 94,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-082",
+    "name": "Iris Butler",
+    "company": "Satellite Technology",
+    "email": "iris.butler@satellite.com",
+    "source": "Cold Call",
+    "score": 79,
+    "status": "new"
+  },
+  {
+    "id": "lead-083",
+    "name": "Cedric Simmons",
+    "company": "Space Exploration",
+    "email": "cedric.simmons@space.com",
+    "source": "Website",
+    "score": 91,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-084",
+    "name": "Bernice Foster",
+    "company": "Rocket Propulsion",
+    "email": "bernice.foster@rocket.com",
+    "source": "Trade Show",
+    "score": 86,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-085",
+    "name": "Johnnie Gonzales",
+    "company": "Mission Control",
+    "email": "johnnie.gonzales@mission.com",
+    "source": "LinkedIn",
+    "score": 88,
+    "status": "new"
+  },
+  {
+    "id": "lead-086",
+    "name": "Viola Bryant",
+    "company": "Navigation Systems",
+    "email": "viola.bryant@navigation.com",
+    "source": "Referral",
+    "score": 82,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-087",
+    "name": "Emmett Alexander",
+    "company": "Communication Satellites",
+    "email": "emmett.alexander@comsat.com",
+    "source": "Cold Call",
+    "score": 77,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-088",
+    "name": "Rosemary Russell",
+    "company": "Ground Stations",
+    "email": "rosemary.russell@ground.com",
+    "source": "Website",
+    "score": 85,
+    "status": "new"
+  },
+  {
+    "id": "lead-089",
+    "name": "Earnest Griffin",
+    "company": "Orbital Mechanics",
+    "email": "earnest.griffin@orbital.com",
+    "source": "Trade Show",
+    "score": 90,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-090",
+    "name": "Minnie Diaz",
+    "company": "Launch Services",
+    "email": "minnie.diaz@launch.com",
+    "source": "LinkedIn",
+    "score": 84,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-091",
+    "name": "Salvatore Hayes",
+    "company": "Payload Integration",
+    "email": "salvatore.hayes@payload.com",
+    "source": "Referral",
+    "score": 81,
+    "status": "new"
+  },
+  {
+    "id": "lead-092",
+    "name": "Mildred Myers",
+    "company": "Spacecraft Design",
+    "email": "mildred.myers@spacecraft.com",
+    "source": "Cold Call",
+    "score": 78,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-093",
+    "name": "Wilbur Ford",
+    "company": "Propulsion Systems",
+    "email": "wilbur.ford@propulsion.com",
+    "source": "Website",
+    "score": 89,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-094",
+    "name": "Estelle Hamilton",
+    "company": "Life Support Systems",
+    "email": "estelle.hamilton@lifesupport.com",
+    "source": "Trade Show",
+    "score": 87,
+    "status": "new"
+  },
+  {
+    "id": "lead-095",
+    "name": "Archie Graham",
+    "company": "Thermal Protection",
+    "email": "archie.graham@thermal.com",
+    "source": "LinkedIn",
+    "score": 83,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-096",
+    "name": "Lucille Sullivan",
+    "company": "Materials Science",
+    "email": "lucille.sullivan@materials.com",
+    "source": "Referral",
+    "score": 92,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-097",
+    "name": "Elmer Wallace",
+    "company": "Composite Materials",
+    "email": "elmer.wallace@composite.com",
+    "source": "Cold Call",
+    "score": 75,
+    "status": "unqualified"
+  },
+  {
+    "id": "lead-098",
+    "name": "Pearl West",
+    "company": "Advanced Alloys",
+    "email": "pearl.west@alloys.com",
+    "source": "Website",
+    "score": 86,
+    "status": "new"
+  },
+  {
+    "id": "lead-099",
+    "name": "Hubert Woods",
+    "company": "Nanotechnology",
+    "email": "hubert.woods@nanotech.com",
+    "source": "Trade Show",
+    "score": 91,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-100",
+    "name": "Blanche Wells",
+    "company": "Smart Materials",
+    "email": "blanche.wells@smartmaterials.com",
+    "source": "LinkedIn",
+    "score": 88,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-101",
+    "name": "Lyle Fisher",
+    "company": "3D Printing Solutions",
+    "email": "lyle.fisher@3dprinting.com",
+    "source": "Referral",
+    "score": 84,
+    "status": "new"
+  },
+  {
+    "id": "lead-102",
+    "name": "Olive Stone",
+    "company": "Additive Manufacturing",
+    "email": "olive.stone@additive.com",
+    "source": "Cold Call",
+    "score": 80,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-103",
+    "name": "Forrest Spencer",
+    "company": "Rapid Prototyping",
+    "email": "forrest.spencer@rapid.com",
+    "source": "Website",
+    "score": 87,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-104",
+    "name": "Velma Gardner",
+    "company": "Digital Manufacturing",
+    "email": "velma.gardner@digital.com",
+    "source": "Trade Show",
+    "score": 89,
+    "status": "new"
+  },
+  {
+    "id": "lead-105",
+    "name": "Orville Stephens",
+    "company": "Industrial Automation",
+    "email": "orville.stephens@industrial.com",
+    "source": "LinkedIn",
+    "score": 85,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-106",
+    "name": "Fannie Payne",
+    "company": "Process Control",
+    "email": "fannie.payne@process.com",
+    "source": "Referral",
+    "score": 82,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-107",
+    "name": "Wilfred Marshall",
+    "company": "Quality Assurance",
+    "email": "wilfred.marshall@qa.com",
+    "source": "Cold Call",
+    "score": 78,
+    "status": "new"
+  },
+  {
+    "id": "lead-108",
+    "name": "Gertrude Owens",
+    "company": "Testing Solutions",
+    "email": "gertrude.owens@testing.com",
+    "source": "Website",
+    "score": 91,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-109",
+    "name": "Dewey Palmer",
+    "company": "Inspection Systems",
+    "email": "dewey.palmer@inspection.com",
+    "source": "Trade Show",
+    "score": 86,
+    "status": "qualified"
+  },
+  {
+    "id": "lead-110",
+    "name": "Essie Burton",
+    "company": "Measurement Tech",
+    "email": "essie.burton@measurement.com",
+    "source": "LinkedIn",
+    "score": 83,
+    "status": "new"
+  },
+  {
+    "id": "lead-111",
+    "name": "Woodrow Washington",
+    "company": "Calibration Services",
+    "email": "woodrow.washington@calibration.com",
+    "source": "Referral",
+    "score": 88,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-112",
+    "name": "Mattie Cobb",
+    "company": "Precision Instruments",
+    "email": "mattie.cobb@precision.com",
+    "source": "Cold Call",
+    "score": 79,
+    "status": "qualified"
+  }
+]
