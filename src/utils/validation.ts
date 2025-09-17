@@ -15,6 +15,21 @@ export const validateEmail = (email: string): boolean => {
  */
 export const validateNonNegativeNumber = (value: string): boolean => {
     if (value === '') return true; // Optional field
-    const num = parseFloat(value);
+
+    // Check for whitespace-only strings
+    if (value.trim() === '' && value !== '') return false;
+
+    // Use regex to check if the string is a valid number format
+    // Allows: digits, optional decimal point with digits, leading zeros
+    const numberRegex = /^\d*\.?\d*$/;
+
+    // Check if it's just a dot
+    if (value.trim() === '.') return false;
+
+    if (!numberRegex.test(value.trim())) {
+        return false;
+    }
+
+    const num = Number(value);
     return !isNaN(num) && num >= 0;
 };

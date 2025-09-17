@@ -18,5 +18,5 @@ export const formatCurrency = (amount?: number): string => {
  */
 export const formatSimpleCurrency = (amount?: number): string => {
     if (!amount) return 'Not specified';
-    return `$${amount.toLocaleString()}`;
+    return `$${amount.toLocaleString('en-US')}`;
 };

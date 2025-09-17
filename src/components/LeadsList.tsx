@@ -199,7 +199,7 @@ export function LeadsList({ leads, isLoading, onLeadClick }: LeadsListProps) {
       {/* Results count */}
       <div className="text-sm text-muted-foreground">
         Showing {displayedLeads.length} of {filteredAndSortedLeads.length} leads
-        {filteredAndSortedLeads.length !== leads.length && (
+        {filteredAndSortedLeads.length !== (Array.isArray(leads) ? leads.length : 0) && (
           <span className="text-muted-foreground/70"> (filtered from {Array.isArray(leads) ? leads.length : 0} total)</span>
         )}
       </div>
