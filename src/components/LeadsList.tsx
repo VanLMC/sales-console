@@ -138,21 +138,22 @@ export function LeadsList({ leads, isLoading, onLeadClick }: LeadsListProps) {
 
   if (isLoading) {
     return (
-      <div className="space-y-4">
+      <div className="space-y-4" role="status" aria-label="Loading leads">
         <div className="flex gap-4 mb-6">
           <div className="relative flex-1">
-            <div className="h-10 bg-muted rounded-md animate-pulse" />
+            <div className="h-10 bg-muted rounded-md animate-pulse" aria-hidden="true" />
           </div>
           <div className="w-48">
-            <div className="h-10 bg-muted rounded-md animate-pulse" />
+            <div className="h-10 bg-muted rounded-md animate-pulse" aria-hidden="true" />
           </div>
         </div>
         <div className="border rounded-md">
-          <div className="h-12 bg-muted/50 border-b" />
+          <div className="h-12 bg-muted/50 border-b" aria-hidden="true" />
           {Array.from({ length: 5 }).map((_, i) => (
-            <div key={i} className="h-16 border-b bg-muted/30 animate-pulse" />
+            <div key={i} className="h-16 border-b bg-muted/30 animate-pulse" aria-hidden="true" />
           ))}
         </div>
+        <span className="sr-only">Loading leads data, please wait...</span>
       </div>
     );
   }
@@ -160,22 +161,24 @@ export function LeadsList({ leads, isLoading, onLeadClick }: LeadsListProps) {
   return (
     <div className="space-y-4">
       {/* Search and Filter Controls */}
-      <div className="flex gap-4 mb-6">
+      <section className="flex gap-4 mb-6" role="search" aria-label="Lead filters">
         <div className="relative flex-1">
-          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
+          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" aria-hidden="true" />
           <Input
             placeholder="Search by name or company..."
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
             className="pl-10"
+            aria-label="Search leads by name or company"
+            role="searchbox"
           />
         </div>
         <Select
           value={statusFilter}
           onValueChange={(value: LeadStatus | 'all') => updateStatusFilter(value)}
         >
-          <SelectTrigger className="w-48">
-            <SelectValue />
+          <SelectTrigger className="w-48" aria-label="Filter by lead status">
+            <SelectValue placeholder="Filter by status" />
           </SelectTrigger>
           <SelectContent>
             {leadStatusFilterOptions.map((option) => (
@@ -190,14 +193,20 @@ export function LeadsList({ leads, isLoading, onLeadClick }: LeadsListProps) {
             variant="outline"
             onClick={handleResetFilters}
             className="whitespace-nowrap"
+            aria-label="Clear all filters and reset to default view"
           >
             Reset Filters
           </Button>
         )}
-      </div>
+      </section>
 
       {/* Results count */}
-      <div className="text-sm text-muted-foreground">
+      <div
+        className="text-sm text-muted-foreground"
+        role="status"
+        aria-live="polite"
+        aria-label={`Search results: showing ${displayedLeads.length} of ${filteredAndSortedLeads.length} leads`}
+      >
         Showing {displayedLeads.length} of {filteredAndSortedLeads.length} leads
         {filteredAndSortedLeads.length !== (Array.isArray(leads) ? leads.length : 0) && (
           <span className="text-muted-foreground/70"> (filtered from {Array.isArray(leads) ? leads.length : 0} total)</span>
@@ -205,31 +214,36 @@ export function LeadsList({ leads, isLoading, onLeadClick }: LeadsListProps) {
       </div>
 
       {/* Table */}
-      <div className="border rounded-md">
-        <Table>
+      <div className="border rounded-md" role="region" aria-label="Leads data table">
+        <Table role="table" aria-label="List of leads with their details">
           <TableHeader>
-            <TableRow>
-              <TableHead>Name</TableHead>
-              <TableHead>Company</TableHead>
-              <TableHead>Email</TableHead>
-              <TableHead>Source</TableHead>
-              <TableHead className="text-center">
+            <TableRow role="row">
+              <TableHead role="columnheader" aria-sort="none">Name</TableHead>
+              <TableHead role="columnheader" aria-sort="none">Company</TableHead>
+              <TableHead role="columnheader" aria-sort="none">Email</TableHead>
+              <TableHead role="columnheader" aria-sort="none">Source</TableHead>
+              <TableHead
+                className="text-center"
+                role="columnheader"
+                aria-sort={sortOrder === 'desc' ? 'descending' : 'ascending'}
+              >
                 <Button
                   variant="ghost"
                   size="sm"
                   onClick={toggleSortOrder}
                   className="h-auto p-0 hover:bg-transparent"
+                  aria-label={`Sort by score ${sortOrder === 'desc' ? 'ascending' : 'descending'}`}
                 >
-                  Score <ArrowUpDown className="ml-1 h-3 w-3" />
+                  Score <ArrowUpDown className="ml-1 h-3 w-3" aria-hidden="true" />
                 </Button>
               </TableHead>
-              <TableHead>Status</TableHead>
+              <TableHead role="columnheader" aria-sort="none">Status</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             {filteredAndSortedLeads.length === 0 ? (
-              <TableRow>
-                <TableCell colSpan={6} className="text-center py-8 text-muted-foreground">
+              <TableRow role="row">
+                <TableCell colSpan={6} className="text-center py-8 text-muted-foreground" role="cell">
                   {debouncedSearchTerm || statusFilter !== 'all'
                     ? 'No leads match your search criteria'
                     : 'No leads available'
@@ -242,14 +256,26 @@ export function LeadsList({ leads, isLoading, onLeadClick }: LeadsListProps) {
                   key={lead.id}
                   className="cursor-pointer hover:bg-muted/50"
                   onClick={() => onLeadClick(lead)}
+                  role="row"
+                  tabIndex={0}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      onLeadClick(lead);
+                    }
+                  }}
+                  aria-label={`Lead: ${lead.name} from ${lead.company}, click to view details`}
                 >
-                  <TableCell>{lead.name}</TableCell>
-                  <TableCell>{lead.company}</TableCell>
-                  <TableCell>{lead.email}</TableCell>
-                  <TableCell>{lead.source}</TableCell>
-                  <TableCell className="text-center">{lead.score}</TableCell>
-                  <TableCell>
-                    <Badge variant={getStatusBadgeVariant(lead.status)}>
+                  <TableCell role="cell">{lead.name}</TableCell>
+                  <TableCell role="cell">{lead.company}</TableCell>
+                  <TableCell role="cell">{lead.email}</TableCell>
+                  <TableCell role="cell">{lead.source}</TableCell>
+                  <TableCell className="text-center" role="cell">{lead.score}</TableCell>
+                  <TableCell role="cell">
+                    <Badge
+                      variant={getStatusBadgeVariant(lead.status)}
+                      aria-label={`Status: ${getStatusLabel(lead.status)}`}
+                    >
                       {getStatusLabel(lead.status)}
                     </Badge>
                   </TableCell>
@@ -262,10 +288,16 @@ export function LeadsList({ leads, isLoading, onLeadClick }: LeadsListProps) {
 
       {/* Loading more indicator and infinite scroll trigger */}
       {hasMore && displayedLeads.length > 0 && (
-        <div ref={observerRef} className="flex justify-center py-4">
+        <div
+          ref={observerRef}
+          className="flex justify-center py-4"
+          role="status"
+          aria-live="polite"
+          aria-label="Loading more leads"
+        >
           {isLoadingMore && (
             <div className="flex items-center gap-2 text-muted-foreground">
-              <Loader2 className="h-4 w-4 animate-spin" />
+              <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
               <span>Loading more leads...</span>
             </div>
           )}

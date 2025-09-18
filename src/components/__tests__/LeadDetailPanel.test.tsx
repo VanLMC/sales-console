@@ -69,8 +69,8 @@ describe('LeadDetailPanel', () => {
             />
         );
 
-        expect(screen.getByRole('button', { name: 'Edit' })).toBeInTheDocument();
-        expect(screen.getByRole('button', { name: 'Convert to Opportunity' })).toBeInTheDocument();
+        expect(screen.getByRole('button', { name: 'Edit lead information' })).toBeInTheDocument();
+        expect(screen.getByRole('button', { name: 'Convert this lead to an opportunity' })).toBeInTheDocument();
     });
 
     it('enters edit mode when Edit button is clicked', async () => {
@@ -86,12 +86,12 @@ describe('LeadDetailPanel', () => {
             />
         );
 
-        const editButton = screen.getByRole('button', { name: 'Edit' });
+        const editButton = screen.getByRole('button', { name: 'Edit lead information' });
         await user.click(editButton);
 
         // Should show Save and Cancel buttons
         expect(screen.getByRole('button', { name: 'Save' })).toBeInTheDocument();
-        expect(screen.getByRole('button', { name: 'Cancel' })).toBeInTheDocument();
+        expect(screen.getByRole('button', { name: 'Cancel editing and discard changes' })).toBeInTheDocument();
 
         // Should show input fields
         expect(screen.getByDisplayValue('john@acme.com')).toBeInTheDocument();
@@ -112,7 +112,7 @@ describe('LeadDetailPanel', () => {
         );
 
         // Enter edit mode
-        await user.click(screen.getByRole('button', { name: 'Edit' }));
+        await user.click(screen.getByRole('button', { name: 'Edit lead information' }));
 
         // Clear email and enter invalid email
         const emailInput = screen.getByDisplayValue('john@acme.com');
@@ -141,7 +141,7 @@ describe('LeadDetailPanel', () => {
         );
 
         // Enter edit mode
-        await user.click(screen.getByRole('button', { name: 'Edit' }));
+        await user.click(screen.getByRole('button', { name: 'Edit lead information' }));
 
         // Enter invalid amount
         const amountInput = screen.getByDisplayValue('5000');
@@ -170,7 +170,7 @@ describe('LeadDetailPanel', () => {
         );
 
         // Enter edit mode
-        await user.click(screen.getByRole('button', { name: 'Edit' }));
+        await user.click(screen.getByRole('button', { name: 'Edit lead information' }));
 
         // Change email
         const emailInput = screen.getByDisplayValue('john@acme.com');
@@ -209,7 +209,7 @@ describe('LeadDetailPanel', () => {
         );
 
         // Enter edit mode
-        await user.click(screen.getByRole('button', { name: 'Edit' }));
+        await user.click(screen.getByRole('button', { name: 'Edit lead information' }));
 
         // Change email
         const emailInput = screen.getByDisplayValue('john@acme.com');
@@ -217,10 +217,10 @@ describe('LeadDetailPanel', () => {
         await user.type(emailInput, 'changed@email.com');
 
         // Cancel changes
-        await user.click(screen.getByRole('button', { name: 'Cancel' }));
+        await user.click(screen.getByRole('button', { name: 'Cancel editing and discard changes' }));
 
         // Should be back in read-only mode
-        expect(screen.getByRole('button', { name: 'Edit' })).toBeInTheDocument();
+        expect(screen.getByRole('button', { name: 'Edit lead information' })).toBeInTheDocument();
         expect(screen.getByText('john@acme.com')).toBeInTheDocument(); // Original email restored
     });
 
@@ -237,7 +237,7 @@ describe('LeadDetailPanel', () => {
             />
         );
 
-        await user.click(screen.getByRole('button', { name: 'Convert to Opportunity' }));
+        await user.click(screen.getByRole('button', { name: 'Convert this lead to an opportunity' }));
 
         expect(mockOnConvert).toHaveBeenCalledWith(mockLead);
         expect(mockOnClose).toHaveBeenCalled();
@@ -256,7 +256,7 @@ describe('LeadDetailPanel', () => {
             />
         );
 
-        const convertButton = screen.getByRole('button', { name: 'Convert to Opportunity' });
+        const convertButton = screen.getByRole('button', { name: 'Cannot convert unqualified lead to opportunity' });
         expect(convertButton).toBeDisabled();
     });
 
@@ -290,7 +290,7 @@ describe('LeadDetailPanel', () => {
         );
 
         // Enter edit mode
-        await user.click(screen.getByRole('button', { name: 'Edit' }));
+        await user.click(screen.getByRole('button', { name: 'Edit lead information' }));
 
         // Start save
         await user.click(screen.getByRole('button', { name: 'Save' }));

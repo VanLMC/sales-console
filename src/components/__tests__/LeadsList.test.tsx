@@ -188,7 +188,7 @@ describe('LeadsList', () => {
             />
         );
 
-        const sortButton = screen.getByRole('button', { name: /Score/ });
+        const sortButton = screen.getByRole('button', { name: /Sort by score/ });
         expect(sortButton).toBeInTheDocument();
     });
 

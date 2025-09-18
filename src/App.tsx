@@ -70,7 +70,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="border-b">
+      <header className="border-b" role="banner">
         <div className="max-w-6xl mx-auto px-8 py-6">
           <div className="flex items-center justify-between">
             <div>
@@ -79,25 +79,41 @@ export default function App() {
                 Manage your leads and convert them to opportunities
               </p>
             </div>
-            <div className="flex items-center gap-2">
+            <nav className="flex items-center gap-2" aria-label="Application settings">
               <ThemeToggle />
-            </div>
+            </nav>
           </div>
         </div>
-      </div>
+      </header>
 
-      <div className="max-w-6xl mx-auto px-8 py-8">
-        <Tabs defaultValue="leads" className="space-y-6">
-          <TabsList>
-            <TabsTrigger value="leads">
+      <main className="max-w-6xl mx-auto px-8 py-8" role="main">
+        <Tabs defaultValue="leads" className="space-y-6" aria-label="Sales data navigation">
+          <TabsList role="tablist" aria-label="Choose data view">
+            <TabsTrigger
+              value="leads"
+              role="tab"
+              aria-controls="leads-panel"
+              aria-label={`Leads tab, ${Array.isArray(leads) ? leads.length : 0} leads available`}
+            >
               Leads ({Array.isArray(leads) ? leads.length : 0})
             </TabsTrigger>
-            <TabsTrigger value="opportunities">
+            <TabsTrigger
+              value="opportunities"
+              role="tab"
+              aria-controls="opportunities-panel"
+              aria-label={`Opportunities tab, ${opportunities.length} opportunities available`}
+            >
               Opportunities ({opportunities.length})
             </TabsTrigger>
           </TabsList>
 
-          <TabsContent value="leads" className="space-y-6">
+          <TabsContent
+            value="leads"
+            className="space-y-6"
+            role="tabpanel"
+            id="leads-panel"
+            aria-labelledby="leads-tab"
+          >
             <LeadsList
               leads={leads}
               isLoading={isLoading}
@@ -105,11 +121,17 @@ export default function App() {
             />
           </TabsContent>
 
-          <TabsContent value="opportunities" className="space-y-6">
+          <TabsContent
+            value="opportunities"
+            className="space-y-6"
+            role="tabpanel"
+            id="opportunities-panel"
+            aria-labelledby="opportunities-tab"
+          >
             <OpportunitiesList opportunities={opportunities} />
           </TabsContent>
         </Tabs>
-      </div>
+      </main>
 
       <LeadDetailPanel
         lead={selectedLead}
@@ -118,8 +140,6 @@ export default function App() {
         onSave={handleSaveLead}
         onConvert={handleConvertToOpportunity}
       />
-
-
     </div>
   );
 }
