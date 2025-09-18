@@ -1,4 +1,6 @@
+
 # Sales Console
+![chrome-capture-2025-09-17](https://github.com/user-attachments/assets/52954e43-8f58-4ce2-b520-5507003b230a)
 
 A modern, accessible sales lead management application built with React and TypeScript. This application streamlines the process of managing sales leads, tracking their progress, and converting qualified prospects into opportunities.
 
